@@ -1,0 +1,119 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+}
+
+#left {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid black 2px;
+}
+
+#left form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+}
+
+#left h3 {
+    color: #073C2A;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+#left h1 {
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+
+#form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    margin-left: 2vw;
+}
+
+#left input, #left textarea, select {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 80%;
+    height: 4vh;
+    padding-left: 1vw;
+}
+
+#left textarea {
+    padding-top: 1vh;
+    height: 6vh;
+    resize: none;
+}
+
+#left input[type='submit'] {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 2vh;
+    padding: 0;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reg-img {
+    height: 70vh;
+}
+
+#left input:focus {
+    outline: none;
+}
+
+#left input[type='submit']:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 80%;
+    padding: 1vh 0vw 1vh 0vw;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: #073C2A;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+p {
+    margin-top: 1vh;
+    color: red;
+}
+
+a {
+    margin-top: 1vh;
+    text-decoration: none;
+}
+
+#key-img {
+    height: 50vh;
+}
+
+#todo {
+    display: flex;
+    height: 4vh;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}

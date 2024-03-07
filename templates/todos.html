@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'todos.css' %}">
+</head>
+<body>
+    <div id="grid-container">
+    <div id="left">
+    <h3>Add a todo</h3>
+    <form action="todos" method="POST">
+        {% csrf_token %}
+        <input name="name" type="text" placeholder="Your todo">
+        <textarea name="desc" placeholder="Description"></textarea>
+        <input name="date" type="date">
+
+        <select name="priority" id="priority">
+            <option value="1">Priority 1</option>
+            <option value="2">Priority 2</option>
+            <option value="3">Priority 3</option>
+            <option value="4">Priority 4</option>
+            <option value="5">Priority 5</option>
+          </select>
+        <button><input type="submit"></button>
+    </form>
+    <a href="logout">Logout</a>
+
+    {% for message in messages %}
+    <p id="success-message">{{message}}</p>
+    {% endfor %}
+    </div>
+    
+    <div id="right">
+    {% for todo in todolist %}
+    <div id="todo">
+        <h3>{{todo.name}}</h3>
+        <p>{{todo.desc}}</p>
+        <p>{{todo.date}}</p>
+        <a href="delete/{{todo.id}}">Delete</a>
+    </div>
+    {%  endfor %}
+    </div>
+    </div>
+</body>
+<script>
+var message_ele = document.getElementById("success-message");
+
+setTimeout(function(){ 
+   message_ele.style.display = "none"; 
+}, 3000);
+</script>
+</html>

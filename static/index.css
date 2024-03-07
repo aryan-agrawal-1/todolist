@@ -1,0 +1,55 @@
+body {
+    background-image: url("/static/bg.png");
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 7vh;
+}
+
+h3 {
+    text-align: center;
+    color: #555555;
+    width: 40vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+button {
+    padding: 1.7vh 5vw 1.7vh 5vw;
+    margin: auto;
+    border: 1px black solid;
+    border-radius: 50px;
+    background-color: #073C2A;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.2;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    height: 6.5vh;
+    border-bottom: black solid 1px;
+}
+
+header img {
+    height: 5vh;
+}

@@ -1,0 +1,98 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+#left {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#left form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh
+}
+
+#left h3 {
+    color: #073C2A;
+    font-size: 3vh;
+    margin: 1vh 0 0 2vw;
+}
+
+#left h1 {
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+
+#form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    margin-left: 2vw;
+}
+
+#left input {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 40%;
+    height: 4vh;
+    padding-left: 1vw;
+}
+
+#left input[type='submit'] {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+#right {
+    background-color: #073C2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reg-img {
+    height: 70vh;
+}
+
+#left input:focus {
+    outline: none;
+}
+
+#left input[type='submit']:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 42%;
+    padding: 1vh 0vw 1vh 0vw;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: #073C2A;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+p {
+    margin-top: 1vh;
+    color: red;
+}
+
+a {
+    margin-top: 1vh;
+    text-decoration: none;
+}
+
+#key-img {
+    height: 50vh;
+}
